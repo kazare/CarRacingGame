@@ -33,6 +33,9 @@ namespace CarRacingGame
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.brownCar = new System.Windows.Forms.PictureBox();
+            this.greenCar = new System.Windows.Forms.PictureBox();
+            this.orangeCar = new System.Windows.Forms.PictureBox();
             this.playerCar = new System.Windows.Forms.PictureBox();
             this.road2 = new System.Windows.Forms.PictureBox();
             this.road1 = new System.Windows.Forms.PictureBox();
@@ -44,16 +47,13 @@ namespace CarRacingGame
             this.bestScoreText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.stopBtn = new System.Windows.Forms.Button();
-            this.orangeCar = new System.Windows.Forms.PictureBox();
-            this.greenCar = new System.Windows.Forms.PictureBox();
-            this.brownCar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brownCar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenCar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangeCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.road2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.road1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orangeCar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenCar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brownCar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,11 +71,41 @@ namespace CarRacingGame
             this.panel1.Size = new System.Drawing.Size(1036, 859);
             this.panel1.TabIndex = 1;
             // 
+            // brownCar
+            // 
+            this.brownCar.Image = global::CarRacingGame.Properties.Resources.browncar1;
+            this.brownCar.Location = new System.Drawing.Point(466, -90);
+            this.brownCar.Name = "brownCar";
+            this.brownCar.Size = new System.Drawing.Size(109, 206);
+            this.brownCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.brownCar.TabIndex = 11;
+            this.brownCar.TabStop = false;
+            // 
+            // greenCar
+            // 
+            this.greenCar.Image = global::CarRacingGame.Properties.Resources.greencar1;
+            this.greenCar.Location = new System.Drawing.Point(684, 422);
+            this.greenCar.Name = "greenCar";
+            this.greenCar.Size = new System.Drawing.Size(109, 203);
+            this.greenCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.greenCar.TabIndex = 10;
+            this.greenCar.TabStop = false;
+            // 
+            // orangeCar
+            // 
+            this.orangeCar.Image = global::CarRacingGame.Properties.Resources.orangecar1;
+            this.orangeCar.Location = new System.Drawing.Point(63, 194);
+            this.orangeCar.Name = "orangeCar";
+            this.orangeCar.Size = new System.Drawing.Size(109, 203);
+            this.orangeCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.orangeCar.TabIndex = 9;
+            this.orangeCar.TabStop = false;
+            // 
             // playerCar
             // 
             this.playerCar.BackColor = System.Drawing.Color.Transparent;
             this.playerCar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.playerCar.Image = ((System.Drawing.Image)(resources.GetObject("playerCar.Image")));
+            this.playerCar.Image = global::CarRacingGame.Properties.Resources.playercar;
             this.playerCar.Location = new System.Drawing.Point(466, 633);
             this.playerCar.Name = "playerCar";
             this.playerCar.Size = new System.Drawing.Size(109, 203);
@@ -85,7 +115,7 @@ namespace CarRacingGame
             // 
             // road2
             // 
-            this.road2.Image = ((System.Drawing.Image)(resources.GetObject("road2.Image")));
+            this.road2.Image = global::CarRacingGame.Properties.Resources.road_fullsize;
             this.road2.Location = new System.Drawing.Point(-1, -836);
             this.road2.Name = "road2";
             this.road2.Size = new System.Drawing.Size(1036, 859);
@@ -96,7 +126,7 @@ namespace CarRacingGame
             // road1
             // 
             this.road1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.road1.Image = ((System.Drawing.Image)(resources.GetObject("road1.Image")));
+            this.road1.Image = global::CarRacingGame.Properties.Resources.road_fullsize;
             this.road1.Location = new System.Drawing.Point(-1, -1);
             this.road1.Name = "road1";
             this.road1.Size = new System.Drawing.Size(1036, 859);
@@ -179,36 +209,6 @@ namespace CarRacingGame
             this.stopBtn.UseVisualStyleBackColor = true;
             this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
-            // orangeCar
-            // 
-            this.orangeCar.Image = ((System.Drawing.Image)(resources.GetObject("orangeCar.Image")));
-            this.orangeCar.Location = new System.Drawing.Point(63, 194);
-            this.orangeCar.Name = "orangeCar";
-            this.orangeCar.Size = new System.Drawing.Size(109, 203);
-            this.orangeCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.orangeCar.TabIndex = 9;
-            this.orangeCar.TabStop = false;
-            // 
-            // greenCar
-            // 
-            this.greenCar.Image = ((System.Drawing.Image)(resources.GetObject("greenCar.Image")));
-            this.greenCar.Location = new System.Drawing.Point(684, 422);
-            this.greenCar.Name = "greenCar";
-            this.greenCar.Size = new System.Drawing.Size(109, 203);
-            this.greenCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.greenCar.TabIndex = 10;
-            this.greenCar.TabStop = false;
-            // 
-            // brownCar
-            // 
-            this.brownCar.Image = ((System.Drawing.Image)(resources.GetObject("brownCar.Image")));
-            this.brownCar.Location = new System.Drawing.Point(466, -90);
-            this.brownCar.Name = "brownCar";
-            this.brownCar.Size = new System.Drawing.Size(109, 206);
-            this.brownCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.brownCar.TabIndex = 11;
-            this.brownCar.TabStop = false;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -232,12 +232,12 @@ namespace CarRacingGame
             this.Text = "Car Racing Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.brownCar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenCar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangeCar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerCar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.road2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.road1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orangeCar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenCar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brownCar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
