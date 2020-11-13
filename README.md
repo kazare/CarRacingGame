@@ -4,30 +4,25 @@
 
 # Work In Progress
 
-## What I worked on:
-
-**Added UI elements**
-- Start button
-- Stop button
-- Instructions
-
-**Created illusion of movement**
-- Animated road movement
-- Using game timer to move road down a certain amount and reset
-
-**Added cars**
-- Non functional
+## Added
+- Randomized position of cars
+- Randomized car images
+- Refactored code into classes for readability and maintainability
+- Database of high scores
 
 
-## To be worked on:
-
-- Enable collision/lose condition
-- Animate obstacles to appear in random places
-- Connect class code to game play elements
-
+## To Add
+- Dynamic road speed
 
 ## Bugs:
 
-- Player car can move beyond the window
-	- Will fix to stay within boundaries
+- ~~Player car can move beyond the window~~
+	- ~~Will fix to stay within boundaries~~
+
+
+## Testing Methods
+
+- Extensive play testing
+- Print values to console to see movement in real time
+
 
