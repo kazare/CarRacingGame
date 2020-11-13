@@ -1,28 +1,31 @@
-﻿namespace CarRacingGame
+﻿using System.Windows.Forms;
+
+namespace CarRacingGame
 {
     //Handles all road functionality
-    class Road
+    class Road : Game
     {
-        private int speed;
-
-        public int Speed { get; set; }
-
-        //If user reaches a certain number of points increase the road speed. The road will go faster and faster.
-        public void RoadSpeed(int points)
+        // Inehrit base class constructor parameters
+        public Road(PictureBox road1, PictureBox road2) : base(road1, road2)
         {
-            if (points < 10)
-            {
-                Speed = 20;
-            }
-            else if (points > 10 && points < 50)
-            {
-                Speed = 60;
-            }
-            else
-            {
-                Speed = 100;
-            }
+
         }
 
+        public void Run()
+        {
+            //Move roads at certain speed
+            road1.Top += RoadSpeed;
+            road2.Top += RoadSpeed;
+
+            //Once the top of the road reaches the boundary reset the road to new position
+            if (road1.Top > Boundary)
+            {
+                road1.Top = BackToTop;
+            }
+            if (road2.Top > Boundary)
+            {
+                road2.Top = BackToTop;
+            }
+        }
     }
 }

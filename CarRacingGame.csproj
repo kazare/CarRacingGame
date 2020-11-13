@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarAI.cs" />
+    <Compile Include="GameReset.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,7 +61,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Road.cs" />
-    <Compile Include="Scoring.cs" />
+    <Compile Include="Score.cs" />
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,17 +84,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="gameicon.ico" />
-    <None Include="Resources\road-fullsize.png" />
-    <None Include="Resources\playercar.png" />
-    <None Include="Resources\orangecar1.png" />
-    <None Include="Resources\greencar1.png" />
-    <None Include="Resources\browncar1.png" />
+    <None Include="Resources\road-fullsize1.png" />
+    <None Include="Resources\redTruck.png" />
+    <None Include="Resources\policeCar.png" />
+    <None Include="Resources\playerCar1.png" />
+    <None Include="Resources\orangeCar11.png" />
+    <None Include="Resources\greenTruck.png" />
+    <None Include="Resources\greenCar11.png" />
+    <None Include="Resources\brownCar11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
