@@ -48,6 +48,7 @@ namespace CarRacingGame
             this.bestScoreText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pauseBtn = new System.Windows.Forms.Button();
+            this.viewScoresBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aiCar2)).BeginInit();
@@ -142,9 +143,9 @@ namespace CarRacingGame
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(391, 976);
+            this.startBtn.Location = new System.Drawing.Point(391, 904);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(248, 134);
+            this.startBtn.Size = new System.Drawing.Size(248, 104);
             this.startBtn.TabIndex = 2;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = true;
@@ -202,13 +203,23 @@ namespace CarRacingGame
             // 
             // pauseBtn
             // 
-            this.pauseBtn.Location = new System.Drawing.Point(391, 1131);
+            this.pauseBtn.Location = new System.Drawing.Point(391, 1044);
             this.pauseBtn.Name = "pauseBtn";
-            this.pauseBtn.Size = new System.Drawing.Size(248, 134);
+            this.pauseBtn.Size = new System.Drawing.Size(248, 96);
             this.pauseBtn.TabIndex = 8;
             this.pauseBtn.Text = "Pause";
             this.pauseBtn.UseVisualStyleBackColor = true;
             this.pauseBtn.Click += new System.EventHandler(this.pauseBtn_Click);
+            // 
+            // viewScoresBtn
+            // 
+            this.viewScoresBtn.Location = new System.Drawing.Point(391, 1163);
+            this.viewScoresBtn.Name = "viewScoresBtn";
+            this.viewScoresBtn.Size = new System.Drawing.Size(248, 114);
+            this.viewScoresBtn.TabIndex = 9;
+            this.viewScoresBtn.Text = "View High Scores";
+            this.viewScoresBtn.UseVisualStyleBackColor = true;
+            this.viewScoresBtn.Click += new System.EventHandler(this.ViewScores_Click);
             // 
             // MainWindow
             // 
@@ -216,6 +227,7 @@ namespace CarRacingGame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1060, 1289);
+            this.Controls.Add(this.viewScoresBtn);
             this.Controls.Add(this.pauseBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bestScoreText);
@@ -231,6 +243,7 @@ namespace CarRacingGame
             this.MinimumSize = new System.Drawing.Size(1092, 1377);
             this.Name = "MainWindow";
             this.Text = "Car Racing Game";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.playerCar)).EndInit();
@@ -260,6 +273,7 @@ namespace CarRacingGame
         private System.Windows.Forms.PictureBox aiCar2;
         private System.Windows.Forms.PictureBox aiCar3;
         private System.Windows.Forms.PictureBox aiCar1;
+        private Button viewScoresBtn;
     }
 }
 
