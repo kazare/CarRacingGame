@@ -13,10 +13,6 @@ namespace CarRacingGame
 
         public void Run()
         {
-            //Move roads at certain speed
-            road1.Top += RoadSpeed;
-            road2.Top += RoadSpeed;
-
             //Once the top of the road reaches the boundary reset the road to new position
             if (road1.Top > Boundary)
             {

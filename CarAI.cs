@@ -66,14 +66,8 @@ namespace CarRacingGame
             }
         }
 
-        //Move aiCars down track
         public void Run()
         {
-            //How fast to move ai cars
-            aiCar1.Top += AISpeed;
-            aiCar2.Top += AISpeed;
-            aiCar3.Top += AISpeed;
-
             //Once the top of the car reaches the boundary bring to top and randomize position
             if (aiCar1.Top > Boundary)
             {

@@ -71,6 +71,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Difficulty.cs" />
     <Compile Include="GameReset.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="HighScoreForm.cs">

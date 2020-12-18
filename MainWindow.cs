@@ -36,15 +36,20 @@ namespace CarRacingGame
             scoreText.Text = regScore.ToString();
             bestScoreText.Text = bestScore.ToString();
 
+            Difficulty diff = new Difficulty(aiCar1, aiCar2, aiCar3, road1, road2);
+
+            diff.IncreaseSpeed(regScore);
+            
+
             // Move road
             road.Run();
 
             // Move car carAI
             carAI.Run();
-
+            
             // Save score into static variable
-            best = bestScore;
-
+            best = regScore;
+            
             // If cars collide end game
             if (carAI.Collide())
             {
@@ -52,7 +57,7 @@ namespace CarRacingGame
                 startBtn.Enabled = true;
                 pauseBtn.Enabled = false;
                 viewScoresBtn.Enabled = true;
-
+                
                 // If score is top 10 of all scores, show window
                 // If not show message box
                 HighScoreQuery query = new HighScoreQuery();
@@ -70,7 +75,6 @@ namespace CarRacingGame
                 game.Reset();
                 score.RawPoints = game.RawPoints;
                 score.Points = game.Points;
-
             }
         }
 
