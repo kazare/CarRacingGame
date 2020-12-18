@@ -35,6 +35,15 @@ namespace CarRacingGame
             this.gameTimer = gameTimer;
         }
 
+        protected Game(PictureBox ai1, PictureBox ai2, PictureBox ai3, PictureBox road1, PictureBox road2)
+        {
+            this.aiCar1 = ai1;
+            this.aiCar2 = ai2;
+            this.aiCar3 = ai3;
+            this.road1 = road1;
+            this.road2 = road2;
+        }
+
         protected Game(PictureBox player, PictureBox ai1, PictureBox ai2, PictureBox ai3)
         {
             this.playerCar = player;
