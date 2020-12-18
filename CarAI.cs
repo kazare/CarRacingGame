@@ -46,7 +46,7 @@ namespace CarRacingGame
 
                 case 4:
                     aiCar.Image = Properties.Resources.redTruck;
-                    //Custom image size for truck
+                    // Custom image size for truck
                     aiCar.Width = 45;
                     aiCar.Height = 106;
                     break;
@@ -66,15 +66,8 @@ namespace CarRacingGame
             }
         }
 
-        //Move aiCars down track
         public void Run()
         {
-            //How fast to move ai cars
-            int aiSpeed = 5;
-            aiCar1.Top += aiSpeed;
-            aiCar2.Top += aiSpeed;
-            aiCar3.Top += aiSpeed;
-
             //Once the top of the car reaches the boundary bring to top and randomize position
             if (aiCar1.Top > Boundary)
             {
